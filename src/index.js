@@ -22,7 +22,6 @@ export default function localStorageAdapter(config = {}) {
   }
 
   return function(url, requestOptions = {}) {
-
     let action = null;
 
     switch (requestOptions.verb) {
