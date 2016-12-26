@@ -1,5 +1,5 @@
 {
-  "name": "bivrost-local-storage-adapter",
+  "name": "bivrost-localstorage-adapter",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frankland/bivrost-local-storage-adapter.git"
+    "url": "git+https://github.com/tuchk4/bivrost-local-storage-adapter.git"
   },
   "author": "tuchk4 <valeriy.sorokobatko@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frankland/bivrost-local-storage-adapter/issues"
+    "url": "https://github.com/tuchk4/bivrost-local-storage-adapter/issues"
   },
-  "homepage": "https://github.com/frankland/bivrost-local-storage-adapter#readme",
+  "homepage": "https://github.com/tuchk4/bivrost-local-storage-adapter#readme",
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-cli": "^6.4.0",

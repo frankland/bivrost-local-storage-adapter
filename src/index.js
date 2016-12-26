@@ -9,7 +9,7 @@ const load = namespace => {
   return processed;
 };
 
-let save = (namespace, data) => {
+const save = (namespace, data) => {
   var prepared = JSON.stringify(data);
   localStorage.setItem(namespace, prepared);
 };
@@ -18,13 +18,13 @@ export default function localStorageAdapter(config = {}) {
   const namespace = config.namespace;
 
   if (!namespace) {
-    throw new Error('LocalStorage namespace should be defined. "namespace" attr for localStorageAdapter');
+    throw new Error('Bivrost localStorage adapter: namespace should be defined');
   }
 
   return function(url, requestOptions = {}) {
     let action = null;
 
-    switch (requestOptions.verb) {
+    switch (requestOptions.method) {
       case 'GET':
         action = (id, query, body) => {
           return new Promise(resolve => {
@@ -70,4 +70,3 @@ export default function localStorageAdapter(config = {}) {
     return action(url, requestOptions.query, requestOptions.body);
   }
 };
-
