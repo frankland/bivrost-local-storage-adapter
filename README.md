@@ -1,7 +1,7 @@
 # Bivrost localStorage adapter
 
 ```
-npm i --save bivrost-local-storage-adapter
+npm i --save bivrost-localstorage-adapter
 ```
 
 ## Usage
